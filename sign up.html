@@ -27,6 +27,10 @@
     .form-control, .btn{        
         border-radius: 3px;
     }
+	.modal-login {
+		color: #636363;
+		width: 350px;
+	}
 	.signup-form{
 		width: 400px;
 		margin: 0 auto;
@@ -124,14 +128,8 @@
             <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
         </div>
     </form>
-	<div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+	<div class="text-center">Already have an account? <a href="#myModal" class="trigger-btn" data-toggle="modal">Sign in</a></div>
 </div>
-<div class="text-center">
-	<!-- Button HTML (to Trigger Modal) -->
-	<a href="#myModal" class="trigger-btn" data-toggle="modal">Click to Open Login Modal</a>
-</div>
-
-<!-- Modal HTML -->
 <div id="myModal" class="modal fade">
 	<div class="modal-dialog modal-login">
 		<div class="modal-content">
@@ -160,7 +158,7 @@
 			</div>
 		</div>
 	</div>
-</div>     
+</div>
 
 </body>
 </html>                            
