@@ -18,6 +18,10 @@
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
 
+
+  
+
+
 </head>
 
 <body id="page-top">
@@ -157,6 +161,78 @@
         <div class="divider-custom-line"></div>
       </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+            <h1> Notes </h1>
+            <p class="page-description">take notes by recording your voice</p>
+            <!-- <p><a class="tz-link" href="https://tutorialzine.com/2017/08/converting-from-speech-to-text-with-javascript">Read the full article on Tutorialzine »</a></p> -->
+
+            <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+
+            <div class="app"> 
+                <h3>Add New Note</h3>
+                <div class="input-single">
+                    <textarea id="note-textarea" placeholder="Create a new note by typing or using your voice." rows="6"></textarea>
+                </div>         
+                <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+                <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+                <button id="save-note-btn" title="Save Note">Save Note</button>   
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                <p>Press <strong> Pause Recognition  </strong> when u are done</p>
+                <p>Press <strong>Save Notes</strong> to save </p>
+                <h3> <strong> My Notes </strong></h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">You don't have any notes.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- Portfolio Grid Items -->
       <div class="row">
 
@@ -168,7 +244,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+            <img class="img-fluid" src="img/portfolio/ee.png" alt="">
           </div>
         </div>
 
@@ -180,7 +256,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <img class="img-fluid" src="img/portfolio/pil.png" alt="">
           </div>
         </div>
 
@@ -192,7 +268,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+            <img class="img-fluid" src="img/portfolio/news.png" alt="">
           </div>
         </div>
 
@@ -219,6 +295,27 @@
             <img class="img-fluid" src="img/portfolio/safe.png" alt="">
           </div>
         </div>
+
+
+
+
+
+
+
+<!-- 
+
+<div class="modal-body">
+    <iframe src="./speech notes/index.html" />
+</div>
+        
+
+
+
+ -->
+
+
+
+
 
         <!-- Portfolio Item 6 -->
         <div class="col-md-6 col-lg-4">
@@ -419,6 +516,77 @@
                 <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+            <h1> Notes </h1>
+            <p class="page-description">take notes by recording your voice</p>
+            <!-- <p><a class="tz-link" href="https://tutorialzine.com/2017/08/converting-from-speech-to-text-with-javascript">Read the full article on Tutorialzine »</a></p> -->
+
+            <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+
+            <div class="app"> 
+                <h3>Add New Note</h3>
+                <div class="input-single">
+                    <textarea id="note-textarea" placeholder="Create a new note by typing or using your voice." rows="6"></textarea>
+                </div>         
+                <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+                <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+                <button id="save-note-btn" title="Save Note">Save Note</button>   
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                <p>Press <strong> Pause Recognition  </strong> when u are done</p>
+                <p>Press <strong>Save Notes</strong> to save </p>
+                <h3> <strong> My Notes </strong></h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">You don't have any notes.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -641,6 +809,24 @@
       </div>
     </div>
   </div>
+  <script>
+      if (annyang) {
+        // Let's define a command.
+        var commands = {
+          'hello': function() {window.location.href = "https://newsapi.org/v2/top-headlines?country=in&apiKey=ccb763ca2ba948c9a44e6c881f215337"},
+          'goodbye': function() { alert('See you later!'); }
+        };
+        // This should be true
+        console.log(annyang.isListening())
+        // Add our commands to annyang
+        annyang.addCommands(commands);
+        // Start listening.
+        annyang.start();
+        annyang.addCallback('soundstart', function() {
+          console.log('sound detected');
+        });
+      }
+     </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -658,6 +844,8 @@
 
   <!-- news -->
   <script src="news.js"></script>
+
+  <script type="voicescript.js"></script>
 
 </body>
 
